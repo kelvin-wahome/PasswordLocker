@@ -15,3 +15,10 @@ class Credentials:
         Method to save credentials object into credentials_list
         '''
         Credentials.credentials_list.append(self)
+
+
+    def delete_credentials(self):
+        '''
+        Method that deletes a saved contact from the list .
+        '''
+        Contact.contact_list.remove(self)
