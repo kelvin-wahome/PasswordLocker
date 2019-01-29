@@ -24,6 +24,9 @@ class TestUser(unittest.TestCase):
         '''
         self.assertEqual(self.new_user.first_name,"Kelvin Wahome")
         self.assertEqual(self.new_user.user_password,"callofduty")
+        self.assertEqual(self.new_credentials.account_name,"Instagram")
+        self.assertEqual(self.new_credentials.account_username,"Kelvin Wahome")
+        self.assertEqual(self.new_credentials.account_password,"callofduty")
 
     def test_save_user(self):
         '''
@@ -40,6 +43,8 @@ class TestUser(unittest.TestCase):
         test_user = User("Test","kenya")
         test_user.save_user()
         self.assertEqual(len(User.user_list),2)
+
+    def
 
 
 
