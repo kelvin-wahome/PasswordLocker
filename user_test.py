@@ -5,6 +5,13 @@ class TestUser(unittest.TestCase):
     '''
     Test class that defines test cases for the user class behaviours
     '''
+
+    def tearDown(self):
+            '''
+            tearDown method that does cleanup after each test case has run
+            '''
+            User.user_list = []
+
     def setUp(self):
         '''
         Set up method to run before each test cases .
