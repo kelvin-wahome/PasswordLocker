@@ -41,3 +41,19 @@ from credentials import Credentials
                    u_password = input()
 
                    save_user(create_user(u_name,u_password)) #create and save user
+                   print('\n')
+                   print(f"New User {u_name} created!")
+                   print('\n')
+
+               elif short_code == 'cc':
+                   print ("Add new credentials")
+
+                   print("User name .. ")
+                   u_name = input()
+                   print("Account name .. ")
+                   a_name = input()
+                   print("Password ..")
+                   password = input()
+
+                   save_credentials(create_credentials(u_name,a_name,password))
+                   print('\n')
