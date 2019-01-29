@@ -18,6 +18,13 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.first_name,"Kelvin Wahome")
         self.assertEqual(self.new_user.user_password,"callofduty")
 
+    def test_save_user(self):
+        '''
+        test case to test if the user object is saved
+        '''
+        self.new_user.save_user() # save a user
+        self.assertEqual(len(User.user_list),1)
+
 
 if __name__ == '__main__':
     unittest.main()
