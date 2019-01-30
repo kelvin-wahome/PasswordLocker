@@ -45,7 +45,7 @@ class TestUser(unittest.TestCase):
         self.assertEqual(len(User.user_list),2)
 
     @classmethod
-    def display_credentials(cls,name,password):
+    def test_display_credentials(cls,name,password):
         '''
         test case to test if we can display credentials by name and password
         '''

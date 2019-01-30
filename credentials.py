@@ -22,3 +22,12 @@ class Credentials:
         Method that deletes a saved contact from the list .
         '''
         Contact.contact_list.remove(self)
+
+    @classmethod
+    def display_credentials(cls,name):
+        '''
+        method that returns a list of credentials_list
+        '''
+        for credentials in cls.credentials_list:
+            if credentials.account_username == name :
+                return cls.credentials_list
