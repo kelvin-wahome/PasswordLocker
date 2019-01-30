@@ -45,7 +45,7 @@ def main():
     user_name = input()
     print('\n')
     while True:
-       print(f"Wassup {user_name}!!.Use these short codes: cu-create new user, cc-create new credentials,")
+       print(f"Wassup {user_name}!!.Use these short codes: cu-create new user, cc-create new credentials,dc-display credentials")
 
        short_code = input().lower()
        if short_code == 'cu':
@@ -73,6 +73,17 @@ def main():
 
            save_credentials(create_credentials(u_name,a_name,password))
            print('\n')
+
+       elif short-code == 'dc':
+           if display_credentials():
+               print("Here is a list of your all your accounts' credentials")
+               print('\n')
+               for credentials in display_credentials():
+                   print(f"{credentials.account_name},{credentials.account_username}")
+               print('\n')
+           else:
+                print('\n')
+                print("You dont seem to have any contacts saved yet")
 
 if __name__ == '__main__':
 
