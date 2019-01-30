@@ -16,7 +16,7 @@ def save_user(user):
     '''
     user.save_user()
 
-def create_credentials_(name,account,password):
+def create_credentials(name,account,password):
     '''
     function to create new credentials
     '''
