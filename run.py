@@ -57,3 +57,7 @@ from credentials import Credentials
 
                    save_credentials(create_credentials(u_name,a_name,password))
                    print('\n')
+
+if __name__ == '__main__':
+
+    main()

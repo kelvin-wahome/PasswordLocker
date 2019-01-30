@@ -35,7 +35,7 @@ class TestUser(unittest.TestCase):
         self.new_user.save_user() # save a user
         self.assertEqual(len(User.user_list),1)
 
-    def test_multipple_user(self):
+    def test_multiple_user(self):
         '''
         test case to check if we can save multiple user objects
         '''
@@ -44,7 +44,12 @@ class TestUser(unittest.TestCase):
         test_user.save_user()
         self.assertEqual(len(User.user_list),2)
 
-    def
+    @classmethod
+    def display_credentials(cls,name,password):
+        '''
+        test case to test if we can display credentials by name and password
+        '''
+        self.assertEqual(Credentials.display_credentials(),Credentials.credentials_list)
 
 
 
