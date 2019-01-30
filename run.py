@@ -16,6 +16,14 @@ def save_user(user):
     '''
     user.save_user()
 
+def create_credentials_(name,account,password):
+    '''
+    function to create new credentials
+    '''
+    new_credentials = Credentials(name,account,password)
+    return new_credentials
+
+
 def save_credentials(self):
     '''
     Function to save credentials object into credentials_list
